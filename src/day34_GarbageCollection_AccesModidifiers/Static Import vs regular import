@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+    Static import vs regular import
+
+
+    regular import : imports everything from the class
+                    import packageName.className;
+                    import packageName.*
+
+
+    Static import:
+
+                import static packageName.className.staticMember; // imports one static memberof a class
+                import static packageName.className.*;            // imports all static members of a class
