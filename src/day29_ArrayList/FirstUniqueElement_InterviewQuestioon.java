@@ -1,21 +1,15 @@
 package day29_ArrayList;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class FirstUniqueElement_InterviewQuestioon {
     public static void main(String[] args) {
 
 
-        ArrayList<Integer> list=new ArrayList<>();
-        list.add(10);
-        list.add(15);
-        list.add(20);
-        list.add(200);
-        list.add(10);
-        list.add(30);
+        ArrayList<Integer> list=new ArrayList<>(Arrays.asList(10,12,10,225,15,120,12));
 
-        System.out.println(list);
-
+        int result=0;
         for (Integer each1 : list) {
 
             int frequency = 0;
@@ -27,11 +21,12 @@ public class FirstUniqueElement_InterviewQuestioon {
             }
 
             if (frequency==1){
-                System.out.println(each1);
+                result = each1;
                 break;
             }
 
         }
+        System.out.println(result);
 
 
 
