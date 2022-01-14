@@ -15,6 +15,7 @@ public class Fibonacci {
         }
 
         System.out.println(temp);
+        System.out.println("==============================================");
 
         int number = 8;
 
@@ -22,17 +23,17 @@ public class Fibonacci {
         int num2=1;
         int result=0;
 
-        System.out.println(num1); // 0
-        System.out.println(num2); // 1
+       // System.out.println(num1); // 0
+       // System.out.println(num2); // 1
 
         for(int i=2;i<number;i++){
             result=num1+num2; // 0+1=1, result=2, result=2+3=5, result=8, result=13
-            System.out.println(result);
+
             num1=num2; //num1=1, num1=1, num1=2, num1=3, num1=5
             num2=result; //num2=1, num2=2, num2=3, num2=5, num2 = 8
         }
 
-
+        System.out.println(result);
         // 0, 1, 0+1=1 , 1+1=2, 1+2=3, 2+3=5, 3+5=8, 5+8=13
 
 

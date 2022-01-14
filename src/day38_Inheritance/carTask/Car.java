@@ -32,8 +32,6 @@ public class Car {
     public void drive(){
         System.out.println(brand+" "+ model+" is driving");
     }
-    public void autoPilot(){
-        System.out.println(brand+" "+ model+" has autopilot");
-    }
+
 
 }
